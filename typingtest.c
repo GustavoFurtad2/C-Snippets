@@ -8,8 +8,8 @@ char* text = "Brazil is a large country and it is rich in natural resources. Peo
 int currentChar = 0;
 
 double calcPPM(clock_t start, clock_t end, int correctWords) {
-    double cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-    double minutes = cpu_time_used / 60.0;
+    double cpuTimeUsed = ((double) (end - start)) / CLOCKS_PER_SEC;
+    double minutes = cpuTimeUsed / 60.0;
     double ppm = (correctWords / minutes);
     return ppm;
 }
